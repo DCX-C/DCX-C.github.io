@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>github pages</title>
+		<title>reveal.js</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
@@ -16,9 +16,101 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-				<section>Slide 3</section>
+				<section>
+	<h2> GitHub Pages</h2>
+	<p> 简介            </p>
+					<aside class="notes">
+GitHub Pages是一种静态站点托管服务，该服务直接从GitHub上的存储库获取HTML，CSS和JavaScript文件，可以选择在构建过程中运行这些文件，然后发布网站。
+您可以将站点托管在GitHub的`github.io`域或您自己的自定义域上。
+</aside>
+
+				</section>
+<section>
+	<section>
+		<h2>GitHub Pages入门 </h2>
+		<ul>
+		<li>建立一个仓库</li>
+		<li>设置GitHub Pages</li>
+		<li>新建一个文件</li>		
+		</ul>
+	</section>
+
+	<section>
+	<h2>建立一个仓库</h2>
+	仓库名需为username.github.io
+	</section>
+	<section>
+	<h2>设置GitHub Pages</h2>
+	在setting--github pages--source--select branch--选择为主分支
+	</section>
+	<section>
+	<h2>新建一个文件</h2>
+​	名称为index.html，查看w3cshool可自定制网页。
+	</section>
+</section>
+<section>
+<h2>使用hexo建立个人博客</h2>
+</section>
+
+<section>
+<h2>1.准备工作</h2>
+		<ul>
+		<li>安装GIT终端</li>
+		<li>安装node.js</li>
+		<li>创建文件夹</li>		
+		</ul>
+</section>
+
+<section>
+	<section>
+	<h2>2.使用hexo部署网站</h2>
+	</section>
+	<section>
+	<h2>初始化</h2>
+		<ul>
+		<li>npm install -g hexo-cli</li>
+		<li>hexo init</li>
+		<li>npm install</li>		
+		</ul>
+	
+	<aside class = "notes"> 在文件夹内右键选择git base，输入代码</aside>
+	</section>
+
+	<section>
+	<h2>修改 _config.yml文件</h2>
+	<p>deploy:</p>
+  	<p>type: git</p>
+                <p> repository:  #你的仓库地址</p>
+  	<p>branch: master</p>
+	<aside class = "notes"> 下滑到文件底部，填上如下内容：</aside>
+	</section>
+		
+	<section>
+	<h2>部署网站</h2>
+		<ul>
+		<li>hexo clean</li>
+		<li>hexo g</li>
+		<li>hexo d</li>		
+		</ul>
+
+
+
+	<aside class = "notes"> 在git base 中输入代码</aside>
+	</section>
+
+</section>
+<section>
+<h1>大功告成</h1>
+<aside class="notes">本人在测试过程中发现连接请求被拒绝。这是因为域名解析出错了。需要修改DNS服务器，我修改为114.114.114.114后便可以正常访问了。在手机端上也存在这样的问题，同样需要修改DNS服务器</aside>
+</section>
+
+
+<section>
+<a href = "https://dcx-c.github.io/">  github pages应用实例</a>
+</section>
+
+
+
 			</div>
 		</div>
 
